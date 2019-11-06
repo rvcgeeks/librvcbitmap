@@ -17,7 +17,7 @@ These instructions will get you a copy of the project up and running on your loc
 This project is built on Ubuntu 16.04 LTS so
 the release for this project can work on any 64 bit Debian distributions.
 You require 
-1) g++>=4.0
+1) g++>=4.0 <=5.0
 2) deb package system
 
 ### Compilation
