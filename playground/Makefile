@@ -1,10 +1,10 @@
 all:
-	g++ -Os contour_img.cpp -o rvc_contour_img_exec -lrvcbitmap
-	g++ -Os mandelbrot.cpp -o rvc_mandelbrot_exec -lrvcbitmap
-	g++ -Os differentiate.cpp -o rvc_differentiate_exec -lrvcbitmap
-	g++ -Os wow.cpp -o rvc_wow_exec -lrvcbitmap
-	g++ -Os L_system.cpp -o rvc_L_system_exec -lrvcbitmap
-	g++ -Os rootfinder.cpp -o rvc_rootfinder_exec -lrvcbitmap
+	g++-5 -Os contour_img.cpp -o rvc_contour_img_exec -lrvcbitmap
+	g++-5 -Os mandelbrot.cpp -o rvc_mandelbrot_exec -lrvcbitmap
+	g++-5 -Os differentiate.cpp -o rvc_differentiate_exec -lrvcbitmap
+	g++-5 -Os wow.cpp -o rvc_wow_exec -lrvcbitmap
+	g++-5 -Os L_system.cpp -o rvc_L_system_exec -lrvcbitmap
+	g++-5 -Os rootfinder.cpp -o rvc_rootfinder_exec -lrvcbitmap
 	./parallelize "./rvc_contour_img_exec" "./rvc_differentiate_exec rvcgeeks" "./rvc_wow_exec" "./rvc_L_system_exec" "./rvc_rootfinder_exec" 
 	./rvc_mandelbrot_exec < mandelbrot_cmds.txt
 	./rvc_mandelbrot_exec < julia_cmds.txt
