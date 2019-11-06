@@ -1,0 +1,5 @@
+Package: rvcbitmap-dev
+Version: 1.0
+Maintainer: Rajas Chavadekar
+Architecture: amd64
+Description: Bitmap image manipulation library (Developer version) by @rvcgeeks____ (Rajas Chavadekar)
