@@ -7,11 +7,11 @@
 all: librvcbitmap pack
 	
 librvcbitmap:
-	$(CXX) $(CXXFLAGS) framework.cpp 
-	$(CXX) $(CXXFLAGS) file_io.cpp 
-	$(CXX) $(CXXFLAGS) utils.cpp 
-	$(CXX) $(CXXFLAGS) shapes.cpp 
-	$(CXX) -Os -shared $(LDFLAGS) framework.o file_io.o utils.o shapes.o -o librvcbitmap.so
+	g++-5 $(CXXFLAGS) framework.cpp 
+	g++-5 $(CXXFLAGS) file_io.cpp 
+	g++-5 $(CXXFLAGS) utils.cpp 
+	g++-5 $(CXXFLAGS) shapes.cpp 
+	g++-5 -Os -shared $(LDFLAGS) framework.o file_io.o utils.o shapes.o -o librvcbitmap.so
 	strip $(STRIPFLAGS) librvcbitmap.so
 pack:
 	mkdir $(NAME)
